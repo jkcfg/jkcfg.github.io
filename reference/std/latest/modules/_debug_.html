@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>std/merge | @jkcfg/std</title>
+	<title>&quot;debug&quot; | @jkcfg/std</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -888,19 +888,10 @@ img { max-width: 100%; }
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class=" tsd-kind-function tsd-parent-kind-external-module">
-			<a href="std_merge.html#deep" class="tsd-kind-icon">deep</a>
+			<a href="_debug_.html#echo" class="tsd-kind-icon">echo</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-external-module">
-			<a href="std_merge.html#deepwithkey" class="tsd-kind-icon">deep<wbr>With<wbr>Key</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-external-module">
-			<a href="std_merge.html#first" class="tsd-kind-icon">first</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-external-module">
-			<a href="std_merge.html#merge" class="tsd-kind-icon">merge</a>
-		</li>
-		<li class=" tsd-kind-function tsd-parent-kind-external-module">
-			<a href="std_merge.html#replace" class="tsd-kind-icon">replace</a>
+			<a href="_debug_.html#echosync" class="tsd-kind-icon">echo<wbr>Sync</a>
 		</li>
 	</ul>
 </nav>
@@ -913,11 +904,8 @@ img { max-width: 100%; }
 					<section class="tsd-index-section ">
 						<h3>Functions</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="std_merge.html#deep" class="tsd-kind-icon">deep</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="std_merge.html#deepwithkey" class="tsd-kind-icon">deep<wbr>With<wbr>Key</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="std_merge.html#first" class="tsd-kind-icon">first</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="std_merge.html#merge" class="tsd-kind-icon">merge</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="std_merge.html#replace" class="tsd-kind-icon">replace</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_debug_.html#echo" class="tsd-kind-icon">echo</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_debug_.html#echosync" class="tsd-kind-icon">echo<wbr>Sync</a></li>
 						</ul>
 					</section>
 				</div>
@@ -926,325 +914,48 @@ img { max-width: 100%; }
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Functions</h2>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-				<a name="deep" class="tsd-anchor"></a>
-				<h3>deep</h3>
+				<a name="echo" class="tsd-anchor"></a>
+				<h3>echo</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-					<li class="tsd-signature tsd-kind-icon">deep<span class="tsd-signature-symbol">(</span>rules<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					<li class="tsd-signature tsd-kind-icon">echo<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/03f3591/std/merge.js#L62">merge.js:62</a></li>
+								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/03f3591/std/debug.ts#L4">debug.ts:4</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Merge strategy deep merging objects.</p>
-							</div>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>rules: <span class="tsd-signature-type">any</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>optional set of merging rules.</p>
-									<p><code>deep</code> will deep merge objects. This is the default merging strategy of
-										objects. It&#39;s possible to provide a set of rules to override the merge
-									strategy for some properties. See <a href="std_merge.html#merge">merge</a>.</p>
-								</div>
+								<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-				<a name="deepwithkey" class="tsd-anchor"></a>
-				<h3>deep<wbr>With<wbr>Key</h3>
+				<a name="echosync" class="tsd-anchor"></a>
+				<h3>echo<wbr>Sync</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-					<li class="tsd-signature tsd-kind-icon">deep<wbr>With<wbr>Key<span class="tsd-signature-symbol">(</span>mergeKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, rules<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
+					<li class="tsd-signature tsd-kind-icon">echo<wbr>Sync<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/03f3591/std/merge.js#L234">merge.js:234</a></li>
+								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/03f3591/std/debug.ts#L8">debug.ts:8</a></li>
 							</ul>
 						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Merge strategy for arrays of objects, deep merging objects having the same
-								<code>mergeKey</code>.</p>
-							</div>
-						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>mergeKey: <span class="tsd-signature-type">any</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>key used to identify the same object.</p>
-								</div>
-							</li>
-							<li>
-								<h5>rules: <span class="tsd-signature-type">any</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>optional set of rules to merge each object.</p>
-									<p><strong>Example</strong>:</p>
-									<pre><code class="language-js"><span class="hljs-keyword">import</span> { merge, deep, deepWithKey } <span class="hljs-keyword">from</span> <span class="hljs-string">'@jkcfg/std/merge'</span>;
-
-<span class="hljs-keyword">const</span> pod = {
-  <span class="hljs-attr">spec</span>: {
-    <span class="hljs-attr">containers</span>: [{
-      <span class="hljs-attr">name</span>: <span class="hljs-string">'my-app'</span>,
-      <span class="hljs-attr">image</span>: <span class="hljs-string">'busybox'</span>,
-      <span class="hljs-attr">command</span>: [<span class="hljs-string">'sh'</span>, <span class="hljs-string">'-c'</span>, <span class="hljs-string">'echo Hello Kubernetes!'</span>],
-    },{
-      <span class="hljs-attr">name</span>: <span class="hljs-string">'sidecar'</span>,
-      <span class="hljs-attr">image</span>: <span class="hljs-string">'sidecar:v1'</span>,
-    }],
-  },
-};
-
-<span class="hljs-keyword">const</span> sidecarImage = {
-  <span class="hljs-attr">spec</span>: {
-    <span class="hljs-attr">containers</span>: [{
-      <span class="hljs-attr">name</span>: <span class="hljs-string">'sidecar'</span>,
-      <span class="hljs-attr">image</span>: <span class="hljs-string">'sidecar:v2'</span>,
-    }],
-  },
-};
-
-merge(pod, sidecarImage, {
-  <span class="hljs-attr">spec</span>: {
-    <span class="hljs-attr">containers</span>: deepWithKey(<span class="hljs-string">'name'</span>),
-  },
-});</code></pre>
-									<p>Will give the result:</p>
-									<pre><code class="language-js">{
-  <span class="hljs-attr">spec</span>: {
-    <span class="hljs-attr">containers</span>: [
-      {
-        <span class="hljs-attr">command</span>: [
-          <span class="hljs-string">'sh'</span>,
-          <span class="hljs-string">'-c'</span>,
-          <span class="hljs-string">'echo Hello Kubernetes!'</span>,
-        ],
-        <span class="hljs-attr">image</span>: <span class="hljs-string">'busybox'</span>,
-        <span class="hljs-attr">name</span>: <span class="hljs-string">'my-app'</span>,
-      },
-      {
-        <span class="hljs-attr">image</span>: <span class="hljs-string">'sidecar:v2'</span>,
-        <span class="hljs-attr">name</span>: <span class="hljs-string">'sidecar'</span>,
-      },
-    ],
-  },
-}</code></pre>
-								</div>
+								<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-				<a name="first" class="tsd-anchor"></a>
-				<h3>first</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-					<li class="tsd-signature tsd-kind-icon">first<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/03f3591/std/merge.js#L106">merge.js:106</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Merge strategy merging two values by selecting the first value.</p>
-							</div>
-							<p><strong>Example</strong>:</p>
-							<pre><code class="language-js"><span class="hljs-keyword">let</span> a = {
-  <span class="hljs-attr">k0</span>: <span class="hljs-number">1</span>,
-  <span class="hljs-attr">o</span>: {
-    <span class="hljs-attr">o0</span>: <span class="hljs-string">'a string'</span>,
-  },
-};
-
-<span class="hljs-keyword">let</span> b = {
-  <span class="hljs-attr">k0</span>: <span class="hljs-number">2</span>,
-  <span class="hljs-attr">k1</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">o</span>: {
-    <span class="hljs-attr">o0</span>: <span class="hljs-string">'another string'</span>,
-  },
-};
-
-merge(a, b, { <span class="hljs-attr">o</span>: first() });</code></pre>
-							<p>Will give the result:</p>
-							<pre><code class="language-js">{
-  <span class="hljs-attr">k0</span>: <span class="hljs-number">2</span>,
-  <span class="hljs-attr">k1</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">o</span>: {
-    <span class="hljs-attr">o0</span>: <span class="hljs-string">'a string'</span>,
-  },
-}</code></pre>
-						</div>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-				<a name="merge" class="tsd-anchor"></a>
-				<h3>merge</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-					<li class="tsd-signature tsd-kind-icon">merge<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, rule<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/03f3591/std/merge.js#L333">merge.js:333</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Merges <code>b</code> into <code>a</code> with optional merging rule(s).</p>
-							</div>
-						</div>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>a: <span class="tsd-signature-type">any</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Base value.</p>
-								</div>
-							</li>
-							<li>
-								<h5>b: <span class="tsd-signature-type">any</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Merge value.</p>
-								</div>
-							</li>
-							<li>
-								<h5>rule: <span class="tsd-signature-type">any</span></h5>
-								<div class="tsd-comment tsd-typography">
-									<p>Set of merge rules.</p>
-									<p><code>merge</code> will recursively merge two values <code>a</code> and <code>b</code>. By default:</p>
-									<ul>
-										<li>if <code>a</code> and <code>b</code> are primitive types, <code>b</code> is the result of the merge.</li>
-										<li>if <code>a</code> and <code>b</code> are arrays, <code>b</code> is the result of the merge.</li>
-										<li>if <code>a</code> and <code>b</code> are objects, every own property is merged with this very
-										set of default rules.</li>
-										<li>the process is recursive, effectively deep merging objects.</li>
-									</ul>
-									<p>if <code>a</code> and <code>b</code> have different types, <code>merge</code> will throw an error.</p>
-									<p><strong>Examples</strong>:</p>
-									<p>Merge primitive values with the default rules:</p>
-									<pre><code class="language-js">merge(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>);
-
-&gt; <span class="hljs-number">2</span></code></pre>
-									<p>Merge objects with the default rules:</p>
-									<pre><code class="language-js"><span class="hljs-keyword">const</span> a = {
-  <span class="hljs-attr">k0</span>: <span class="hljs-number">1</span>,
-  <span class="hljs-attr">o</span>: {
-    <span class="hljs-attr">o0</span>: <span class="hljs-string">'a string'</span>,
-  },
-};
-
-<span class="hljs-keyword">let</span> b = {
-  <span class="hljs-attr">k0</span>: <span class="hljs-number">2</span>,
-  <span class="hljs-attr">k1</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">o</span>: {
-    <span class="hljs-attr">o0</span>: <span class="hljs-string">'another string'</span>,
-  },
-}
-
-merge(a, b);
-
-&gt;
-{
-  <span class="hljs-attr">k0</span>: <span class="hljs-number">2</span>,
-  <span class="hljs-attr">k1</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">o</span>: {
-    <span class="hljs-attr">o0</span>: <span class="hljs-string">'another string'</span>,
-  }
-}</code></pre>
-									<p><strong>Merge strategies</strong></p>
-									<p>It&#39;s possible to override the default merging rules by specifying a merge
-									strategy, a function that will compute the result of the merge.</p>
-									<p>For primitive values and arrays, the third argument of <code>merge</code> is a
-									function:</p>
-									<pre><code class="language-js"><span class="hljs-keyword">const</span> add = <span class="hljs-function">(<span class="hljs-params">a, b</span>) =&gt;</span> a + b;
-merge(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, add);
-
-&gt; <span class="hljs-number">3</span></code></pre>
-									<p>For objects, each own property can be merged with different strategies. The
-										third argument of <code>merge</code> is an object associating properties with merge
-									functions.</p>
-									<pre><code class="language-js"><span class="hljs-comment">// merge a and b, adding the values of the `k0` property.</span>
-merge(a, b, { <span class="hljs-attr">k0</span>: add });
-
-&gt;
-{
-  <span class="hljs-attr">k0</span>: <span class="hljs-number">3</span>,
-  <span class="hljs-attr">k1</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">o</span>: {
-    <span class="hljs-attr">o0</span>: <span class="hljs-string">'another string'</span>,
-  }
-}</code></pre>
-								</div>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-				<a name="replace" class="tsd-anchor"></a>
-				<h3>replace</h3>
-				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-					<li class="tsd-signature tsd-kind-icon">replace<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">(Anonymous function)</span></li>
-				</ul>
-				<ul class="tsd-descriptions">
-					<li class="tsd-description">
-						<aside class="tsd-sources">
-							<ul>
-								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/03f3591/std/merge.js#L147">merge.js:147</a></li>
-							</ul>
-						</aside>
-						<div class="tsd-comment tsd-typography">
-							<div class="lead">
-								<p>Merge strategy merging two values by selecting the second value.</p>
-							</div>
-							<p><strong>Example</strong>:</p>
-							<pre><code class="language-js"><span class="hljs-keyword">let</span> a = {
-  <span class="hljs-attr">k0</span>: <span class="hljs-number">1</span>,
-  <span class="hljs-attr">o</span>: {
-    <span class="hljs-attr">o0</span>: <span class="hljs-string">'a string'</span>,
-    <span class="hljs-attr">o1</span>: <span class="hljs-string">'this will go away!'</span>,
-  },
-};
-
-<span class="hljs-keyword">let</span> b = {
-  <span class="hljs-attr">k0</span>: <span class="hljs-number">2</span>,
-  <span class="hljs-attr">k1</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">o</span>: {
-    <span class="hljs-attr">o0</span>: <span class="hljs-string">'another string'</span>,
-  },
-};
-
-merge(a, b, { <span class="hljs-attr">o</span>: replace() });</code></pre>
-							<p>Will give the result:</p>
-							<pre><code class="language-js">{
-  <span class="hljs-attr">k0</span>: <span class="hljs-number">2</span>,
-  <span class="hljs-attr">k1</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">o</span>: {
-    <span class="hljs-attr">o0</span>: <span class="hljs-string">'another string'</span>,
-  },
-}</code></pre>
-						</div>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">(Anonymous function)</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
 					</li>
 				</ul>
 			</section>
