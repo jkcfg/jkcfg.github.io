@@ -887,12 +887,6 @@ img { max-width: 100%; }
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
-		<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-			<a href="../interfaces/std_schema.validationerror.html" class="tsd-kind-icon">Validation<wbr>Error</a>
-		</li>
-		<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
-			<a href="std_schema.html#result" class="tsd-kind-icon">Result</a>
-		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-external-module">
 			<a href="std_schema.html#validatewithfile" class="tsd-kind-icon">validate<wbr>With<wbr>File</a>
 		</li>
@@ -911,18 +905,6 @@ img { max-width: 100%; }
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
 					<section class="tsd-index-section ">
-						<h3>Interfaces</h3>
-						<ul class="tsd-index-list">
-							<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/std_schema.validationerror.html" class="tsd-kind-icon">Validation<wbr>Error</a></li>
-						</ul>
-					</section>
-					<section class="tsd-index-section ">
-						<h3>Type aliases</h3>
-						<ul class="tsd-index-list">
-							<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="std_schema.html#result" class="tsd-kind-icon">Result</a></li>
-						</ul>
-					</section>
-					<section class="tsd-index-section ">
 						<h3>Functions</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="std_schema.html#validatewithfile" class="tsd-kind-icon">validate<wbr>With<wbr>File</a></li>
@@ -934,31 +916,18 @@ img { max-width: 100%; }
 			</section>
 		</section>
 		<section class="tsd-panel-group tsd-member-group ">
-			<h2>Type aliases</h2>
-			<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
-				<a name="result" class="tsd-anchor"></a>
-				<h3>Result</h3>
-				<div class="tsd-signature tsd-kind-icon">Result<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"ok"</span><span class="tsd-signature-symbol"> | </span><a href="../interfaces/std_schema.validationerror.html" class="tsd-signature-type">ValidationError</a><span class="tsd-signature-symbol">[]</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in <a href="https://github.com/jkcfg/jk/blob/487d310/std/schema.ts#L27">schema.ts:27</a></li>
-					</ul>
-				</aside>
-			</section>
-		</section>
-		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Functions</h2>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 				<a name="validatewithfile" class="tsd-anchor"></a>
 				<h3>validate<wbr>With<wbr>File</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-					<li class="tsd-signature tsd-kind-icon">validate<wbr>With<wbr>File<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="std_schema.html#result" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">validate<wbr>With<wbr>File<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="std_validation.html#validationresult" class="tsd-signature-type">ValidationResult</a><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/487d310/std/schema.ts#L56">schema.ts:56</a></li>
+								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/e5f5657/std/schema.ts#L36">schema.ts:36</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -976,7 +945,7 @@ img { max-width: 100%; }
 								<h5>path: <span class="tsd-signature-type">string</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="std_schema.html#result" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="std_validation.html#validationresult" class="tsd-signature-type">ValidationResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -984,13 +953,13 @@ img { max-width: 100%; }
 				<a name="validatewithobject" class="tsd-anchor"></a>
 				<h3>validate<wbr>With<wbr>Object</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-					<li class="tsd-signature tsd-kind-icon">validate<wbr>With<wbr>Object<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, schema<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std_schema.html#result" class="tsd-signature-type">Result</a></li>
+					<li class="tsd-signature tsd-kind-icon">validate<wbr>With<wbr>Object<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, schema<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="std_validation.html#validationresult" class="tsd-signature-type">ValidationResult</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/487d310/std/schema.ts#L48">schema.ts:48</a></li>
+								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/e5f5657/std/schema.ts#L28">schema.ts:28</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1009,7 +978,7 @@ img { max-width: 100%; }
 								<h5>schema: <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <a href="std_schema.html#result" class="tsd-signature-type">Result</a></h4>
+						<h4 class="tsd-returns-title">Returns <a href="std_validation.html#validationresult" class="tsd-signature-type">ValidationResult</a></h4>
 					</li>
 				</ul>
 			</section>
@@ -1017,13 +986,13 @@ img { max-width: 100%; }
 				<a name="validatewithresource" class="tsd-anchor"></a>
 				<h3>validate<wbr>With<wbr>Resource</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-					<li class="tsd-signature tsd-kind-icon">validate<wbr>With<wbr>Resource<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, moduleRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="std_schema.html#result" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">validate<wbr>With<wbr>Resource<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, moduleRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="std_validation.html#validationresult" class="tsd-signature-type">ValidationResult</a><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/487d310/std/schema.ts#L74">schema.ts:74</a></li>
+								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/e5f5657/std/schema.ts#L54">schema.ts:54</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1051,7 +1020,7 @@ img { max-width: 100%; }
 								<h5>moduleRef: <span class="tsd-signature-type">string</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="std_schema.html#result" class="tsd-signature-type">Result</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="std_validation.html#validationresult" class="tsd-signature-type">ValidationResult</a><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>
