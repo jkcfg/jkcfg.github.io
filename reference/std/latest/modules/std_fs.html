@@ -899,6 +899,9 @@ img { max-width: 100%; }
 		<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 			<a href="../interfaces/std_fs.infooptions.html" class="tsd-kind-icon">Info<wbr>Options</a>
 		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-external-module">
+			<a href="../interfaces/std_fs.walkopts.html" class="tsd-kind-icon">Walk<wbr>Opts</a>
+		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-external-module">
 			<a href="std_fs.html#dir" class="tsd-kind-icon">dir</a>
 		</li>
@@ -931,6 +934,7 @@ img { max-width: 100%; }
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/std_fs.diroptions.html" class="tsd-kind-icon">Dir<wbr>Options</a></li>
 							<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/std_fs.infooptions.html" class="tsd-kind-icon">Info<wbr>Options</a></li>
+							<li class="tsd-kind-interface tsd-parent-kind-external-module"><a href="../interfaces/std_fs.walkopts.html" class="tsd-kind-icon">Walk<wbr>Opts</a></li>
 						</ul>
 					</section>
 					<section class="tsd-index-section ">
@@ -957,7 +961,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/86452ed/std/fs.ts#L47">fs.ts:47</a></li>
+								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/8bd11fd/std/fs.ts#L47">fs.ts:47</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -983,7 +987,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/86452ed/std/fs.ts#L36">fs.ts:36</a></li>
+								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/8bd11fd/std/fs.ts#L36">fs.ts:36</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1009,7 +1013,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/86452ed/std/fs.ts#L59">fs.ts:59</a></li>
+								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/8bd11fd/std/fs.ts#L59">fs.ts:59</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1029,22 +1033,42 @@ img { max-width: 100%; }
 				<a name="walk" class="tsd-anchor"></a>
 				<h3>walk</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-					<li class="tsd-signature tsd-kind-icon">walk<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">WalkOpts</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/std_fs.fileinfo.html" class="tsd-signature-type">FileInfo</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">walk<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/std_fs.walkopts.html" class="tsd-signature-type">WalkOpts</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/std_fs.fileinfo.html" class="tsd-signature-type">FileInfo</a><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/86452ed/std/fs.ts#L71">fs.ts:71</a></li>
+								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/8bd11fd/std/fs.ts#L88">fs.ts:88</a></li>
 							</ul>
 						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>walk is a generator function that yields the files and directories
+									under a given path, in a preorder traversal. &quot;Preorder&quot; means that
+									the traversal is depth-first, and a directory is yielded
+								immediately before the traversal examines its contents.</p>
+							</div>
+						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>path: <span class="tsd-signature-type">string</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>the starting point for the traversal, which should be a
+									directory.</p>
+								</div>
 							</li>
 							<li>
-								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> opts: <span class="tsd-signature-type">WalkOpts</span><span class="tsd-signature-symbol"> =&nbsp;{}</span></h5>
+								<h5><span class="tsd-flag ts-flagDefault value">Default value</span> opts: <a href="../interfaces/std_fs.walkopts.html" class="tsd-signature-type">WalkOpts</a><span class="tsd-signature-symbol"> =&nbsp;{}</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>pre- and post-hooks for the walk. The pre-hook is
+										called for each directory after it is yielded; if it returns a
+										falsey value, the directory is not traversed. The post-hook is
+										called after a directory&#39;s contents have all been traversed. The
+										starting point does not get treated as part of the traversal, i.e.,
+									it starts with the contents of the directory at <code>path</code>.</p>
+								</div>
 							</li>
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">IterableIterator</span><span class="tsd-signature-symbol">&lt;</span><a href="../classes/std_fs.fileinfo.html" class="tsd-signature-type">FileInfo</a><span class="tsd-signature-symbol">&gt;</span></h4>
