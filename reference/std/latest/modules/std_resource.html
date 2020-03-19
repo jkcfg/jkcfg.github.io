@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>std/debug | @jkcfg/std</title>
+	<title>std/resource | @jkcfg/std</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">/*! normalize.css v1.1.3 | MIT License | git.io/normalize */
@@ -888,10 +888,13 @@ img { max-width: 100%; }
 <nav class="tsd-navigation secondary">
 	<ul>
 		<li class=" tsd-kind-function tsd-parent-kind-external-module">
-			<a href="std_debug.html#echo" class="tsd-kind-icon">echo</a>
+			<a href="std_resource.html#dir" class="tsd-kind-icon">dir</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-external-module">
-			<a href="std_debug.html#echosync" class="tsd-kind-icon">echo<wbr>Sync</a>
+			<a href="std_resource.html#info" class="tsd-kind-icon">info</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-external-module">
+			<a href="std_resource.html#read" class="tsd-kind-icon">read</a>
 		</li>
 	</ul>
 </nav>
@@ -904,8 +907,9 @@ img { max-width: 100%; }
 					<section class="tsd-index-section ">
 						<h3>Functions</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="std_debug.html#echo" class="tsd-kind-icon">echo</a></li>
-							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="std_debug.html#echosync" class="tsd-kind-icon">echo<wbr>Sync</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="std_resource.html#dir" class="tsd-kind-icon">dir</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="std_resource.html#info" class="tsd-kind-icon">info</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="std_resource.html#read" class="tsd-kind-icon">read</a></li>
 						</ul>
 					</section>
 				</div>
@@ -914,48 +918,98 @@ img { max-width: 100%; }
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Functions</h2>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-				<a name="echo" class="tsd-anchor"></a>
-				<h3>echo</h3>
+				<a name="dir" class="tsd-anchor"></a>
+				<h3>dir</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-					<li class="tsd-signature tsd-kind-icon">echo<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">dir<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/std_fs.diroptions.html" class="tsd-signature-type">DirOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/std_fs.directory.html" class="tsd-signature-type">Directory</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/7e993eb/std/debug.ts#L10">debug.ts:10</a></li>
+								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/7846096/std/resource.d.ts#L32">resource.d.ts:32</a></li>
 							</ul>
 						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>dir shall give the directory info at the path given, relative to
+								the importing module.</p>
+							</div>
+						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+								<h5>path: <span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li>
+								<h5>options: <a href="../interfaces/std_fs.diroptions.html" class="tsd-signature-type">DirOptions</a></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<h4 class="tsd-returns-title">Returns <a href="../classes/std_fs.directory.html" class="tsd-signature-type">Directory</a></h4>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-				<a name="echosync" class="tsd-anchor"></a>
-				<h3>echo<wbr>Sync</h3>
+				<a name="info" class="tsd-anchor"></a>
+				<h3>info</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-					<li class="tsd-signature tsd-kind-icon">echo<wbr>Sync<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">...</span>args<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></li>
+					<li class="tsd-signature tsd-kind-icon">info<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><a href="../interfaces/std_fs.infooptions.html" class="tsd-signature-type">InfoOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/std_fs.fileinfo.html" class="tsd-signature-type">FileInfo</a></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/7e993eb/std/debug.ts#L14">debug.ts:14</a></li>
+								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/7846096/std/resource.d.ts#L26">resource.d.ts:26</a></li>
 							</ul>
 						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>info shall give the file info at the path given, relative to the
+								importing module.</p>
+							</div>
+						</div>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>args: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
+								<h5>path: <span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li>
+								<h5>options: <a href="../interfaces/std_fs.infooptions.html" class="tsd-signature-type">InfoOptions</a></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h4>
+						<h4 class="tsd-returns-title">Returns <a href="../classes/std_fs.fileinfo.html" class="tsd-signature-type">FileInfo</a></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+				<a name="read" class="tsd-anchor"></a>
+				<h3>read</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+					<li class="tsd-signature tsd-kind-icon">read<span class="tsd-signature-symbol">(</span>path<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, opts<span class="tsd-signature-symbol">?: </span><a href="../interfaces/std.readoptions.html" class="tsd-signature-type">ReadOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/jkcfg/jk/blob/7846096/std/resource.d.ts#L20">resource.d.ts:20</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>read shall read the contents of the file at the path given,
+								relative to the importing module.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>path: <span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> opts: <a href="../interfaces/std.readoptions.html" class="tsd-signature-type">ReadOptions</a></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>
